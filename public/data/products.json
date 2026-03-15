@@ -1,0 +1,300 @@
+[
+  {
+    "id": "1",
+    "name": "Sundarbans Wild Honey",
+    "slug": "sundarbans-wild-honey",
+    "price": 850,
+    "originalPrice": 950,
+    "description": "Pure, raw honey harvested from the Sundarbans mangrove forest by traditional beekeepers. This wild honey is unprocessed and retains all its natural enzymes, minerals, and antioxidants. Known for its distinctive dark amber color and rich, complex flavor profile with floral and woody notes.",
+    "shortDescription": "Raw wild honey from the Sundarbans mangrove forest",
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "honey",
+    "tags": ["organic", "raw", "best-seller"],
+    "rating": 4.8,
+    "reviewCount": 124,
+    "inStock": true,
+    "isBestSeller": true,
+    "weight": "500g"
+  },
+  {
+    "id": "2",
+    "name": "Kashmir Premium Saffron",
+    "slug": "kashmir-premium-saffron",
+    "price": 2200,
+    "description": "The finest Grade-A saffron threads sourced directly from Kashmir. Each strand is hand-picked and sun-dried to preserve its intense aroma, vibrant crimson color, and distinctive flavor. Perfect for biryanis, desserts, and traditional Bangladeshi sweets.",
+    "shortDescription": "Grade-A hand-picked saffron from Kashmir",
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "spices",
+    "tags": ["premium", "imported"],
+    "rating": 4.9,
+    "reviewCount": 87,
+    "inStock": true,
+    "isBestSeller": true,
+    "weight": "5g"
+  },
+  {
+    "id": "3",
+    "name": "Ajwa Dates — Madinah",
+    "slug": "ajwa-dates-madinah",
+    "price": 1500,
+    "originalPrice": 1700,
+    "description": "Authentic Ajwa dates sourced directly from Madinah, Saudi Arabia. Prized for their soft texture, rich sweetness, and distinctive dark color. Ajwa dates are considered among the finest varieties, perfect for iftar or as a daily health supplement.",
+    "shortDescription": "Authentic soft Ajwa dates from Madinah",
+    "image": "https://images.unsplash.com/photo-1608797178974-15b35a64ede9?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608797178974-15b35a64ede9?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "dates",
+    "tags": ["imported", "premium", "best-seller"],
+    "rating": 4.7,
+    "reviewCount": 203,
+    "inStock": true,
+    "isBestSeller": true,
+    "weight": "500g"
+  },
+  {
+    "id": "4",
+    "name": "Organic Turmeric Powder",
+    "slug": "organic-turmeric-powder",
+    "price": 450,
+    "description": "Stone-ground organic turmeric from the highlands of Lakshmipur. High curcumin content gives it an intense golden color and potent health benefits. Free from artificial colors, preservatives, and additives.",
+    "shortDescription": "Stone-ground organic turmeric, high curcumin",
+    "image": "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "spices",
+    "tags": ["organic", "local"],
+    "rating": 4.5,
+    "reviewCount": 68,
+    "inStock": true,
+    "weight": "200g"
+  },
+  {
+    "id": "5",
+    "name": "Premium Chinigura Rice",
+    "slug": "premium-chinigura-rice",
+    "price": 680,
+    "description": "The crown jewel of Bangladeshi aromatic rice. Chinigura is a heritage variety cherished for its tiny, fragrant grains and delicate flavor. Traditionally served with polao, biriyani, and special occasion dishes.",
+    "shortDescription": "Heritage aromatic Chinigura rice from Bangladesh",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "rice",
+    "tags": ["local", "aromatic", "best-seller"],
+    "rating": 4.6,
+    "reviewCount": 156,
+    "inStock": true,
+    "isBestSeller": true,
+    "weight": "2kg"
+  },
+  {
+    "id": "6",
+    "name": "Darjeeling First Flush Tea",
+    "slug": "darjeeling-first-flush-tea",
+    "price": 950,
+    "description": "Exquisite first flush tea from the Darjeeling highlands. Light, floral, and delicately muscatel — this spring harvest produces the most sought-after leaves. Best enjoyed without milk to appreciate its subtle complexity.",
+    "shortDescription": "First flush spring harvest from Darjeeling",
+    "image": "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "tea",
+    "tags": ["premium", "imported"],
+    "rating": 4.8,
+    "reviewCount": 92,
+    "inStock": true,
+    "weight": "100g"
+  },
+  {
+    "id": "7",
+    "name": "Pure Desi Ghee",
+    "slug": "pure-desi-ghee",
+    "price": 1200,
+    "description": "Traditional slow-cooked clarified butter made from pure cow's milk using the bilona method. Rich, golden, and intensely aromatic — this ghee elevates every dish from dal to sweets. No preservatives, no additives.",
+    "shortDescription": "Bilona method pure cow's milk ghee",
+    "image": "https://images.unsplash.com/photo-1631209121750-a9f656d28f5a?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1631209121750-a9f656d28f5a?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "ghee-oils",
+    "tags": ["traditional", "premium"],
+    "rating": 4.7,
+    "reviewCount": 145,
+    "inStock": true,
+    "isBestSeller": true,
+    "weight": "500g"
+  },
+  {
+    "id": "8",
+    "name": "Mixed Dry Fruits Box",
+    "slug": "mixed-dry-fruits-box",
+    "price": 1800,
+    "originalPrice": 2100,
+    "description": "A curated selection of premium dry fruits including almonds, cashews, pistachios, walnuts, and raisins. Each variety is sourced from the finest growing regions and presented in an elegant gift-ready box.",
+    "shortDescription": "Premium selection of almonds, cashews, pistachios & more",
+    "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "dry-fruits",
+    "tags": ["gift", "premium", "best-seller"],
+    "rating": 4.6,
+    "reviewCount": 178,
+    "inStock": true,
+    "isBestSeller": true,
+    "weight": "500g"
+  },
+  {
+    "id": "9",
+    "name": "Whole Black Pepper",
+    "slug": "whole-black-pepper",
+    "price": 550,
+    "description": "Bold, aromatic whole black peppercorns sourced from the Malabar coast. Sun-dried for maximum flavor intensity. Grind fresh for the best culinary experience — essential for every kitchen.",
+    "shortDescription": "Sun-dried Malabar coast peppercorns",
+    "image": "https://images.unsplash.com/photo-1599909533601-aa2c512989b0?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1599909533601-aa2c512989b0?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "spices",
+    "tags": ["essential", "imported"],
+    "rating": 4.4,
+    "reviewCount": 54,
+    "inStock": true,
+    "weight": "200g"
+  },
+  {
+    "id": "10",
+    "name": "Cold Pressed Mustard Oil",
+    "slug": "cold-pressed-mustard-oil",
+    "price": 380,
+    "description": "Pure cold-pressed mustard oil extracted using traditional wooden ghani method. Retains the pungent aroma and sharp flavor that defines authentic Bengali cuisine. Rich in omega-3 and essential fatty acids.",
+    "shortDescription": "Traditional ghani-pressed pure mustard oil",
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacdc76cc6?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1474979266404-7eaacdc76cc6?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "ghee-oils",
+    "tags": ["traditional", "local", "organic"],
+    "rating": 4.5,
+    "reviewCount": 89,
+    "inStock": true,
+    "weight": "1L"
+  },
+  {
+    "id": "11",
+    "name": "Premium Cashew Nuts",
+    "slug": "premium-cashew-nuts",
+    "price": 1100,
+    "description": "Whole W240 grade cashew nuts — large, creamy, and perfectly roasted with a light touch of Himalayan pink salt. Sourced from the finest orchards and processed to retain their natural buttery flavor.",
+    "shortDescription": "W240 whole roasted cashews, lightly salted",
+    "image": "https://images.unsplash.com/photo-1563292769-4e05b684851a?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1563292769-4e05b684851a?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "dry-fruits",
+    "tags": ["premium", "roasted"],
+    "rating": 4.6,
+    "reviewCount": 112,
+    "inStock": true,
+    "weight": "400g"
+  },
+  {
+    "id": "12",
+    "name": "Green Cardamom — Elaichi",
+    "slug": "green-cardamom-elaichi",
+    "price": 750,
+    "description": "Intensely aromatic green cardamom pods from Guatemala, the world's finest growing region. Each pod is hand-sorted for size and aroma. Essential for chai, biriyani, and traditional Bangladeshi sweets.",
+    "shortDescription": "Hand-sorted premium green cardamom pods",
+    "image": "https://images.unsplash.com/photo-1701174694337-4088e1a7dd5b?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1701174694337-4088e1a7dd5b?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "spices",
+    "tags": ["essential", "aromatic"],
+    "rating": 4.7,
+    "reviewCount": 76,
+    "inStock": true,
+    "weight": "100g"
+  },
+  {
+    "id": "13",
+    "name": "Himalayan Pink Salt",
+    "slug": "himalayan-pink-salt",
+    "price": 320,
+    "description": "Hand-mined from ancient Himalayan salt deposits, this mineral-rich pink salt contains 84 trace elements. Coarse grain — perfect for grinders, cooking, or as a finishing salt to elevate any dish.",
+    "shortDescription": "Mineral-rich coarse Himalayan pink salt",
+    "image": "https://images.unsplash.com/photo-1518110925495-5fe2c8f2be73?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1518110925495-5fe2c8f2be73?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "spices",
+    "tags": ["natural", "imported"],
+    "rating": 4.3,
+    "reviewCount": 45,
+    "inStock": true,
+    "weight": "500g"
+  },
+  {
+    "id": "14",
+    "name": "Organic Sylheti Black Tea",
+    "slug": "organic-sylheti-black-tea",
+    "price": 480,
+    "description": "Full-bodied organic black tea from the rolling hills of Sylhet. Strong, malty, and deeply satisfying — this is the quintessential Bangladeshi tea experience. Pairs perfectly with milk and a touch of sugar.",
+    "shortDescription": "Full-bodied organic black tea from Sylhet",
+    "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "tea",
+    "tags": ["local", "organic"],
+    "rating": 4.5,
+    "reviewCount": 134,
+    "inStock": true,
+    "weight": "250g"
+  },
+  {
+    "id": "15",
+    "name": "Medjool Dates — Large",
+    "slug": "medjool-dates-large",
+    "price": 2500,
+    "description": "Jumbo Medjool dates — nature's caramel. Sourced from Jordan's finest date farms, these dates are exceptionally soft, sweet, and rich. Perfect for snacking, smoothies, or as a natural sweetener in desserts.",
+    "shortDescription": "Jumbo soft Medjool dates from Jordan",
+    "image": "https://images.unsplash.com/photo-1593904786561-7fa0b92f59cd?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1593904786561-7fa0b92f59cd?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "dates",
+    "tags": ["premium", "imported"],
+    "rating": 4.9,
+    "reviewCount": 98,
+    "inStock": true,
+    "weight": "500g"
+  },
+  {
+    "id": "16",
+    "name": "Pure Neem Honey",
+    "slug": "pure-neem-honey",
+    "price": 650,
+    "description": "Light, aromatic honey collected from neem tree blossoms in rural Bangladesh. Known for its mild bitterness and powerful medicinal properties. Unfiltered and unheated to preserve beneficial enzymes.",
+    "shortDescription": "Medicinal neem blossom honey, raw & unfiltered",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=600&fit=crop&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=600&fit=crop&q=80"
+    ],
+    "category": "honey",
+    "tags": ["organic", "medicinal", "local"],
+    "rating": 4.4,
+    "reviewCount": 67,
+    "inStock": true,
+    "weight": "500g"
+  }
+]

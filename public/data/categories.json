@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Honey",
+    "slug": "honey",
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&h=300&fit=crop&q=80",
+    "productCount": 2
+  },
+  {
+    "id": "2",
+    "name": "Spices",
+    "slug": "spices",
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=300&fit=crop&q=80",
+    "productCount": 5
+  },
+  {
+    "id": "3",
+    "name": "Dry Fruits & Nuts",
+    "slug": "dry-fruits",
+    "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop&q=80",
+    "productCount": 2
+  },
+  {
+    "id": "4",
+    "name": "Rice & Grains",
+    "slug": "rice",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&q=80",
+    "productCount": 1
+  },
+  {
+    "id": "5",
+    "name": "Tea & Coffee",
+    "slug": "tea",
+    "image": "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=400&h=300&fit=crop&q=80",
+    "productCount": 2
+  },
+  {
+    "id": "6",
+    "name": "Ghee & Oils",
+    "slug": "ghee-oils",
+    "image": "https://images.unsplash.com/photo-1631209121750-a9f656d28f5a?w=400&h=300&fit=crop&q=80",
+    "productCount": 2
+  },
+  {
+    "id": "7",
+    "name": "Dates & Sweets",
+    "slug": "dates",
+    "image": "https://images.unsplash.com/photo-1608797178974-15b35a64ede9?w=400&h=300&fit=crop&q=80",
+    "productCount": 2
+  }
+]
