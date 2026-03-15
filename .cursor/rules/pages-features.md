@@ -33,12 +33,11 @@
 - Full cart page with item update controls
 - Order summary panel
 
-## Checkout Flow
-Use 4 steps in this exact sequence:
+## Checkout Flow (Current: 3 Steps)
+Current implementation uses 3 steps:
 1. Address
-2. Delivery
-3. Payment
-4. Order Confirmed
+2. Delivery (includes order review and place order)
+3. Order Confirmed
 
 ### Delivery Step Rules
 Delivery options must be shown as radio cards:
@@ -47,7 +46,33 @@ Delivery options must be shown as radio cards:
 
 Behavior:
 - Selecting a delivery zone updates totals in real time
-- Selected zone persists through payment and confirmation
+- Selected zone persists through confirmation
+- Order review (item list, subtotal, delivery fee, total) shown inline
+- "Place Order" button finalizes the order directly from this step
+
+## Payment Step (Deferred — Implement in Future Version)
+> **Status**: Removed from current build. Re-add as Step 3 between Delivery and Order Confirmed.
+
+When implementing, restore the checkout flow to 4 steps:
+1. Address
+2. Delivery
+3. **Payment** ← re-add this step
+4. Order Confirmed
+
+### Payment Step Requirements
+- Add `"payment"` back to `CheckoutStep` type and `STEPS` array in `CheckoutContext.tsx`
+- Create `src/components/checkout/PaymentStep.tsx`
+- Payment methods to support (as radio cards, same UI pattern as delivery):
+  - **Cash on Delivery** (COD) — "Pay when your order arrives"
+  - **bKash / Nagad** — "Mobile financial services"
+  - **Credit / Debit Card** — "Visa, Mastercard, AMEX"
+- Show full order review: itemized list, subtotal, delivery fee, total
+- Show shipping address summary
+- "Place Order" button with simulated processing state
+- Move order placement logic (generateOrderId, confirmOrder, clearCart) from DeliveryStep into PaymentStep
+- Update DeliveryStep button text back to "Continue to Payment" and remove order placement logic
+- Update `STEP_LABELS` in `Checkout.tsx` to include `{ key: "payment", label: "Payment" }`
+- Re-import and render `<PaymentStep />` in `CheckoutContent`
 
 ## Order Confirmed Page
 - Animated success checkmark

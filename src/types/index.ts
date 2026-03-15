@@ -33,5 +33,26 @@ export interface CartItem {
 export interface DeliveryOption {
   id: string;
   label: string;
+  description: string;
   price: number;
+}
+
+export interface ShippingAddress {
+  fullName: string;
+  phone: string;
+  email: string;
+  address: string;
+  city: string;
+  postalCode: string;
+}
+
+export interface OrderSummary {
+  orderId: string;
+  date: string;
+  items: CartItem[];
+  address: ShippingAddress;
+  delivery: DeliveryOption;
+  subtotal: number;
+  deliveryFee: number;
+  total: number;
 }

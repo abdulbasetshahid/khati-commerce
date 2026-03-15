@@ -14,7 +14,7 @@ export function Home() {
 
   useEffect(() => {
     getBestSellers()
-      .then(setBestSellers)
+      .then((products) => setBestSellers(products.slice(0, 4)))
       .finally(() => setBestSellersLoading(false));
   }, []);
 
@@ -63,9 +63,21 @@ export function Home() {
       {/* Best Sellers Section */}
       <section className="py-20 bg-bg-primary">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="font-serif text-3xl text-text-primary text-center mb-12">
-            Best Sellers
-          </h2>
+          <div className="flex items-center justify-between mb-12">
+            <h2 className="font-serif text-3xl text-text-primary">
+              Best Sellers
+            </h2>
+            <Link
+              to="/products"
+              className="inline-flex items-center gap-1 text-sm font-medium text-brand hover:text-brand-hover transition-colors"
+            >
+              View All
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
           <ProductGrid
             products={bestSellers}
             loading={bestSellersLoading}

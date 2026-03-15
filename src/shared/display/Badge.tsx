@@ -2,7 +2,7 @@ type BadgeVariant = "default" | "success" | "warning" | "error";
 
 const variantStyles: Record<BadgeVariant, string> = {
   default: "bg-bg-secondary text-text-primary border-border",
-  success: "bg-success/20 text-success border-success/40",
+  success: "bg-success text-text-inverse border-success",
   warning: "bg-warning/20 text-warning border-warning/40",
   error: "bg-error/20 text-error border-error/40",
 };

@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "@/context/ThemeContext";
 import { useCart } from "@/context/CartContext";
+import { useCartDrawer } from "@/context/CartDrawerContext";
 import { Badge } from "@/shared/display";
 
 const navLinks = [
@@ -14,6 +15,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { toggleTheme, isDark } = useTheme();
   const { itemCount } = useCart();
+  const { openDrawer } = useCartDrawer();
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-bg-primary/80 border-b border-border">
@@ -86,8 +88,9 @@ export function Header() {
               )}
             </button>
 
-            <Link
-              to="/cart"
+            <button
+              type="button"
+              onClick={openDrawer}
               className="relative p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-bg-secondary transition-colors focus:outline-none focus:ring-2 focus:ring-border-focus"
               aria-label={`Cart with ${itemCount} items`}
             >
@@ -114,7 +117,7 @@ export function Header() {
                   {itemCount > 99 ? "99+" : itemCount}
                 </Badge>
               )}
-            </Link>
+            </button>
 
             {/* Mobile: Hamburger */}
             <button

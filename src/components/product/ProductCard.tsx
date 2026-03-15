@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import type { Product } from "@/types";
 import { useCart } from "@/context/CartContext";
+import { useCartDrawer } from "@/context/CartDrawerContext";
 import { Button } from "@/shared/ui";
 import { Badge, Card } from "@/shared/display";
 import { useToast } from "@/shared/feedback";
@@ -10,26 +11,9 @@ interface ProductCardProps {
   product: Product;
 }
 
-function StarRating({ rating }: { rating: number }) {
-  const full = Math.floor(rating);
-  const empty = 5 - full;
-  return (
-    <span
-      className="text-sm"
-      aria-label={`${rating} out of 5 stars`}
-    >
-      {Array.from({ length: full }, (_, i) => (
-        <span key={`full-${i}`} className="text-warning">★</span>
-      ))}
-      {Array.from({ length: empty }, (_, i) => (
-        <span key={`empty-${i}`} className="text-text-secondary">☆</span>
-      ))}
-    </span>
-  );
-}
-
 export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
+  const { openDrawer } = useCartDrawer();
   const { showToast } = useToast();
   const {
     name,
@@ -38,7 +22,6 @@ export function ProductCard({ product }: ProductCardProps) {
     originalPrice,
     shortDescription,
     image,
-    rating,
     weight,
     inStock,
     isBestSeller,
@@ -47,6 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const handleAddToCart = () => {
     addItem(product);
     showToast("Added to cart!", "success");
+    openDrawer();
   };
 
   return (
@@ -98,9 +82,6 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
           <p className="text-text-secondary text-xs mt-0.5">{weight}</p>
-          <div className="mt-2">
-            <StarRating rating={rating} />
-          </div>
           <div className="mt-4">
             <Button
               variant="primary"
