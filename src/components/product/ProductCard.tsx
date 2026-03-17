@@ -17,7 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const { showToast } = useToast();
   const {
     name,
-    slug,
+    id,
     price,
     originalPrice,
     shortDescription,
@@ -43,7 +43,7 @@ export function ProductCard({ product }: ProductCardProps) {
         className="h-full overflow-hidden flex flex-col hover:shadow-lg transition-shadow"
         hover
       >
-        <Link to={`/products/${slug}`} className="block relative">
+        <Link to={`/products/${id}`} className="block relative">
           <div className="relative aspect-square overflow-hidden rounded-t-lg">
             <img
               src={image}
@@ -55,15 +55,10 @@ export function ProductCard({ product }: ProductCardProps) {
                 <Badge variant="success">Best Seller</Badge>
               </div>
             )}
-            {!inStock && (
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                <Badge variant="error">Out of Stock</Badge>
-              </div>
-            )}
           </div>
         </Link>
         <div className="p-4 flex flex-col flex-1">
-          <Link to={`/products/${slug}`}>
+          <Link to={`/products/${id}`}>
             <h3 className="font-serif text-lg text-text-primary hover:text-brand transition-colors line-clamp-1">
               {name}
             </h3>
@@ -81,7 +76,14 @@ export function ProductCard({ product }: ProductCardProps) {
               </span>
             )}
           </div>
-          <p className="text-text-secondary text-xs mt-0.5">{weight}</p>
+          <div className="flex items-center justify-between gap-2 mt-0.5">
+            <p className="text-text-secondary text-xs">{weight}</p>
+            {!inStock && (
+              <span className="text-error text-xs font-medium shrink-0">
+                Out of stock
+              </span>
+            )}
+          </div>
           <div className="mt-4">
             <Button
               variant="primary"

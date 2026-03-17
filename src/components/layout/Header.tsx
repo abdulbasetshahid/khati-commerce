@@ -112,7 +112,7 @@ export function Header() {
               {itemCount > 0 && (
                 <Badge
                   variant="default"
-                  className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] flex items-center justify-center px-1 text-[10px] bg-brand text-text-inverse border-0"
+                  className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] flex items-center justify-center px-1 text-[10px] font-bold bg-brand text-white border-0"
                 >
                   {itemCount > 99 ? "99+" : itemCount}
                 </Badge>
@@ -181,7 +181,7 @@ export function Header() {
               >
                 Cart
                 {itemCount > 0 && (
-                  <Badge variant="default" className="bg-brand text-text-inverse border-0">
+                  <Badge variant="default" className="bg-brand text-white font-bold border-0">
                     {itemCount}
                   </Badge>
                 )}

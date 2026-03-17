@@ -35,7 +35,7 @@
     "tags": ["premium", "imported"],
     "rating": 4.9,
     "reviewCount": 87,
-    "inStock": true,
+    "inStock": false,
     "isBestSeller": true,
     "weight": "5g"
   },

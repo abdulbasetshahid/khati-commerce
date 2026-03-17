@@ -56,3 +56,22 @@ export interface OrderSummary {
   deliveryFee: number;
   total: number;
 }
+
+export type OrderStatus =
+  | 'pending'
+  | 'confirmed'
+  | 'processing'
+  | 'shipped'
+  | 'delivered';
+
+export interface Order extends OrderSummary {
+  status: OrderStatus;
+}
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+  createdAt: string;
+}

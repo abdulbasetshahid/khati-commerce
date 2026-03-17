@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useCheckout, DELIVERY_OPTIONS } from "@/context/CheckoutContext";
 import { useCart } from "@/context/CartContext";
+import { useOrders } from "@/context/OrdersContext";
 import { Button } from "@/shared/ui";
 import { Card } from "@/shared/display";
 import type { DeliveryOption, OrderSummary } from "@/types";
@@ -15,6 +16,7 @@ function generateOrderId(): string {
 export function DeliveryStep() {
   const { address, delivery, setDelivery, prevStep, confirmOrder, nextStep } = useCheckout();
   const { items, subtotal, clearCart } = useCart();
+  const { addOrder } = useOrders();
   const [selected, setSelected] = useState<DeliveryOption | null>(
     delivery ?? null
   );
@@ -57,6 +59,7 @@ export function DeliveryStep() {
     };
 
     confirmOrder(summary);
+    addOrder(summary);
     clearCart();
     nextStep();
     setProcessing(false);
